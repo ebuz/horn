@@ -1,0 +1,12 @@
+Package: horn
+Version: 0.0.0.9000
+Title: horn
+Description: A horn for R.
+Depends: R (>= 2.10)
+Authors@R: person("Esteban", "Buz", , "esteban.buz@gmail.com", c("aut", "cre"))
+License: CC0
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Imports: 
+    audio

@@ -1,0 +1,22 @@
+\name{horn}
+\alias{horn}
+\title{horn.}
+\usage{
+horn()
+}
+\description{
+A horn.
+}
+\examples{
+horn()
+base::Sys.sleep(1)
+horn()
+base::Sys.sleep(.5)
+horn()
+base::Sys.sleep(.25)
+horn()
+base::Sys.sleep(.25)
+horn()
+base::Sys.sleep(.25)
+horn()
+}
