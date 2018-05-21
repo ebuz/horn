@@ -39,12 +39,17 @@ playFileForNixBoi <-
     )
   }
 
-horn <- function() {
-  base::switch(
+horn <- function(x) {
+  base::on.exit(base::switch(
     getOS(),
     "mac" = audio::play.audioSample(hornwav),
     "win" = audio::play.audioSample(hornwav),
     "unix" = playFileForNixBoi(),
     "unknown" = base::stop("get a real OS")
-  )
+  ))
+  if(missing(x)){
+    base::invisible(NULL)
+  } else {
+    base::return(x)
+  }
 }
